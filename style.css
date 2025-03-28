@@ -1,0 +1,407 @@
+body {
+    background-color: #f0f0f0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: black
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.header-section .logo img {
+    width: 150px;
+    height: 100px;
+    filter: invert(1);
+}
+
+.menu-links ul, nav a {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Euclid-Regular";
+    font-weight: bold;
+    gap: 30px;
+}
+
+.menu-links ul, nav a:hover {
+    transform: translate(2px, 2px);
+    color: #be2626bd;
+}
+
+.header-btn a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.807);
+    font-family: "Euclid-Regular";
+    border-radius: 3px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.header-btn a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #be2626bd;
+}
+
+.header-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 150px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-content:first-child {
+    display: flex;
+    gap: 60px;
+}
+
+.banner-content-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 160%;
+    gap: 10px;
+}
+
+.banner-content-left h1 {
+    font-family: "Almarena-Regular";
+    font-weight: normal;
+    font-size: 40px;
+    color: black;
+    line-height: 60px;
+}
+
+.banner-content-left h1 span {
+    font-family: "Almarena-Medium";
+    color: #be2626bd;
+    font-weight: bold;
+}
+
+.banner-content-left p {
+    font-family: "Euclid-Regular";
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.778);
+    line-height: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.socials a:hover {
+    transform: translate(2px, 2px);
+}
+
+.banner-content .socials img {
+    gap: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.banner-content img {
+    width: 800px;
+    height: 500px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 150px;
+    gap: 50px;
+}
+
+.skills-head h1 {
+    font-family: "Almarena-Regular";
+    font-weight: normal;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.skills-head h1 span {
+    font-family: "Almarena-Medium";
+    color: #be2626bd;
+    font-weight: bold;
+}
+
+.skills-content-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.skills-content-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.skill-card:hover {
+    transform: translate(2px, 2px);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.skills-section h3 {
+    font-family: "Euclid-Light";
+    font-size: 15px;
+}
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: auto;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 150px;
+    gap: 20px;
+}
+
+.experience-head h1 {
+    font-family: "Euclid-Light";
+    color: rgba(255, 255, 255, 0.918);
+}
+
+.experience-head h1 span {
+    font-family: "Almarena-Medium";
+    font-weight: bold;
+    color: #be2626bd;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.experience-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Euclid-Light";
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 580px;
+}
+
+.experience-card .card-title h3 {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.experience-card .card-title h4,
+.experience-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-title img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    margin: 50px 150px;
+    gap: 70px;
+}
+
+.about-me-content img {
+    width: 500px;
+    height: 500px;
+}
+
+.about-me-content h1 {
+    font-family: "Euclid-Light";
+}
+
+.about-me-content h1 span {
+    font-family: "Almarena-Medium";
+    font-weight: bold;
+    color: #be2626bd;
+}
+
+.about-me-content p {
+    font-family: "Euclid-Light";
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.797);
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px 150px;
+}
+
+.project-head {
+    text-align: center;
+    font-family: "Euclid-Light";
+}
+
+.project-head span {
+    font-family: "Almarena-Medium";
+    font-weight: bold;
+    color: #be2626bd;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-card-left img {
+    width: 600px;
+    height: 400px;
+}
+
+.project-card-right {
+    font-family: "Euclid-Regular";
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.project-card-right p {
+    color: rgba(255, 255, 255, 0.659);
+}
+
+.project-card-right img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-head {
+    font-family: "Euclid-Light";
+    padding: 20px;
+}
+
+.contact-me-head span {
+    font-family: "Almarena-Medium";
+}
+
+
+
+
+
+@font-face {
+    font-family: "Almarena-Medium";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+}
+
+@font-face {
+    font-family: "Almarena-Regular";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+}
+
+@font-face {
+    font-family: "Euclid-Light";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+@font-face {
+    font-family: "Euclid-Regular";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
+}
