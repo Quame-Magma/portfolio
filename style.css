@@ -8,11 +8,22 @@ body {
 }
 
 .header-section {
+    width: auto;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 150px;
+}
+
+.header-section.scrolled {
+    background-color: black;
 }
 
 .header-section .logo img {
@@ -371,6 +382,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 50px 150px;
 }
 
 .contact-me-head {
@@ -382,7 +394,108 @@ body {
     font-family: "Almarena-Medium";
 }
 
+.contact-me-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    gap: 50px;
+}
 
+/* .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+} */
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+        padding: 12px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: inherit;
+        outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #666;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.form-socials a:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.807);
+    font-family: "Euclid-Regular";
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.form-socials a:first-child:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #be2626bd;
+}
+
+.form-socials img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-section {
+    width: auto;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 150px;
+    font-family: "Euclid-Light";
+    font-size: 14px;
+}
+
+.footer-content img {
+    width: 150px;
+    height: 100px;
+}
 
 
 
