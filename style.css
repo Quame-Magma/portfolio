@@ -7,6 +7,44 @@ body {
     color: black
 }
 
+.header-section.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header-section.scrolled {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.header-section.scrolled .menu-links ul a {
+    color: white;
+}
+
+.header-section .logo img {
+    transition: filter 0.3s ease;
+}
+
+.header-section.scrolled .logo img {
+    filter: invert(0);
+}
+
+.header-section.scrolled .header-btn a {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header-section.scrolled .header-btn a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .header-section {
     width: auto;
     background-color: transparent;
@@ -402,14 +440,6 @@ body {
     gap: 90px;
 }
 
-/* .form-section {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 40px;
-} */
-
 form {
     width: 100%;
     max-width: 500px;
@@ -523,16 +553,13 @@ textarea {
 }
 
 
-/* Mobile Navigation Setup - using existing elements */
 @media screen and (max-width: 992px) {
 
-    /* Create hamburger icon using pseudo-elements on the logo div */
     .logo {
         position: relative;
         z-index: 1001;
     }
 
-    /* Add a pseudo-element for the hamburger menu */
     .logo::after {
         content: '';
         position: absolute;
@@ -551,7 +578,6 @@ textarea {
         box-shadow: 0 -10px 0 white, 0 10px 0 white;
     }
 
-    /* Hide the menu links by default */
     .menu-links {
         position: fixed;
         top: 0;
@@ -566,7 +592,6 @@ textarea {
         z-index: 1000;
     }
 
-    /* Show the menu links when body has the 'nav-active' class */
     body.nav-active .menu-links {
         right: 0;
     }
@@ -582,7 +607,6 @@ textarea {
         font-size: 18px;
     }
 
-    /* Move the header button to the bottom of the nav menu */
     .header-btn {
         position: fixed;
         bottom: 20%;
@@ -596,7 +620,6 @@ textarea {
     }
 }
 
-/* Responsive Layout Adjustments */
 @media screen and (max-width: 1200px) {
     .header-content {
         margin: 0 50px;
@@ -773,7 +796,6 @@ textarea {
     }
 }
 
-/* Animation for the hamburger when nav is active */
 body.nav-active .logo::after {
     background-color: white;
     box-shadow: none;
@@ -790,10 +812,6 @@ body.nav-active .logo::before {
     background-color: white;
     transform: translateY(-50%) rotate(-45deg);
 }
-
-
-
-
 
 
 @font-face {

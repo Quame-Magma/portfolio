@@ -1,10 +1,30 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const header = document.querySelector(".header-section");
+  
+  // Define the sticky class position threshold
+  const sticky = header.offsetTop;
+  
+  // Function to add the sticky class when you reach its scroll position
+  function makeNavbarSticky() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("sticky");
+      header.classList.remove("scrolled");
+    }
+  }
+  
+  // Add the event listener for scroll
+  window.addEventListener("scroll", makeNavbarSticky);
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Use the logo as the toggle for mobile navigation
     const logo = document.querySelector('.logo');
     const body = document.body;
     
     logo.addEventListener('click', function(e) {
-        // Only trigger on smaller screens and when clicking the pseudo-element (hamburger)
         if (window.innerWidth <= 992 && e.clientX > this.getBoundingClientRect().right - 50) {
             body.classList.toggle('nav-active');
             e.preventDefault();
