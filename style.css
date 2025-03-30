@@ -593,12 +593,14 @@ textarea {
     }
 
     body.nav-active .menu-links {
+        position: relative;
         right: 0;
     }
 
     .menu-links ul {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 0;
     }
 
@@ -616,7 +618,7 @@ textarea {
     }
 
     body.nav-active .header-btn {
-        right: 35%;
+        right: 30%;
     }
 }
 
@@ -748,6 +750,16 @@ textarea {
         align-items: flex-start;
     }
 
+    .form-socials {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #get-in-touch-btn {
+        text-align: center;
+        padding: 13px;
+    }
+
     .footer-content {
         margin: 0 20px;
         flex-direction: column;
@@ -777,6 +789,16 @@ textarea {
 
     .socials {
         gap: 15px;
+    }
+
+    .form-socials {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #get-in-touch-btn {
+        text-align: center;
+        padding: 10px;
     }
 
     .socials img,
