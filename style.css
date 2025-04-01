@@ -24,6 +24,10 @@ body {
     color: white;
 }
 
+.header-section.scrolled .menu-links ul a:active {
+    background-color: #be2626bd;
+}
+
 .header-section .logo img {
     transition: filter 0.3s ease;
 }
@@ -39,11 +43,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.header-section.scrolled .header-btn a:hover {
+/* .header-section.scrolled .header-btn a:hover {
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0px white;
     background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 
 .header-section {
     width: auto;
@@ -85,26 +89,9 @@ body {
     color: #be2626bd;
 }
 
-.header-btn a {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.807);
-    font-family: "Euclid-Regular";
-    border-radius: 3px;
-    padding: 10px 15px;
-    gap: 10px;
-}
-
-.header-btn a:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 4px 4px 0px #be2626bd;
-}
-
-.header-btn img {
-    width: 20px;
-    height: 20px;
+.menu-links ul:active,
+nav a:active {
+    color: #be2626bd;
 }
 
 .banner-section {
@@ -360,6 +347,29 @@ body {
     color: rgba(0, 0, 0, 0.797);
 }
 
+.resume-btn a {
+    width: 15%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.807);
+    font-family: "Euclid-Regular";
+    border-radius: 3px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.resume-btn a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #be2626bd;
+}
+
+.resume-btn img {
+    width: 20px;
+    height: 20px;
+}
+
 .projects-section {
     display: flex;
     flex-direction: column;
@@ -396,8 +406,9 @@ body {
 }
 
 .project-card-left img {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .project-card-right {
@@ -552,6 +563,11 @@ textarea {
     height: 100px;
 }
 
+.footer-content p img {
+    width: 16px;
+    height: 16px;
+}
+
 
 @media screen and (max-width: 992px) {
 
@@ -609,17 +625,6 @@ textarea {
         font-size: 18px;
     }
 
-    .header-btn {
-        position: fixed;
-        bottom: 20%;
-        right: -100%;
-        transition: right 0.3s ease;
-        z-index: 1000;
-    }
-
-    body.nav-active .header-btn {
-        right: 30%;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -650,6 +655,18 @@ textarea {
     .header-content {
         margin: 0 30px;
         position: relative;
+    }
+
+    .about-me-content .resume-btn a {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        text-align: center;
+    }
+
+    .about-me-content .resume-btn img {
+        width: 15px;
+        height: 15px;
     }
 
     .banner-content {
@@ -725,6 +742,18 @@ textarea {
         margin: 0 20px;
     }
 
+    .resume-btn a {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        text-align: center;
+    }
+
+    .resume-btn img {
+        width: 15px;
+        height: 15px;
+    }
+
     .banner-section,
     .skills-section,
     .experience-content,
@@ -774,6 +803,18 @@ textarea {
         height: 70px;
     }
 
+    .resume-btn a {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+    }
+
+    .resume-btn img {
+        width: 15px;
+        height: 15px;
+    }
+
     .banner-content-left h1 {
         font-size: 24px;
         line-height: 36px;
@@ -813,7 +854,7 @@ textarea {
         padding: 10px;
     }
 
-    body.nav-active .header-btn {
+    body.nav-active .resume-btn {
         right: 30%;
     }
 }
