@@ -1,6 +1,7 @@
 # AKA Portfolio Website
 
 This repository contains the source code for my personal portfolio website. The website showcases my skills, experience, projects, and contact information.
+You can preview the website on https://arnoldkwame.netlify.app
 
 ![Arnold Kwame Anyor Portfolio](./Assets/images/aka.PNG)
 
