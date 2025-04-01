@@ -24,10 +24,6 @@ body {
     color: white;
 }
 
-.header-section.scrolled .menu-links ul a:active {
-    background-color: #be2626bd;
-}
-
 .header-section .logo img {
     transition: filter 0.3s ease;
 }
@@ -80,11 +76,6 @@ body {
 
 .menu-links ul, nav a:hover {
     transform: translate(2px, 2px);
-    color: #be2626bd;
-}
-
-.menu-links ul:active,
-nav a:active {
     color: #be2626bd;
 }
 
