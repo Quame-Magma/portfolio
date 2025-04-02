@@ -60,7 +60,7 @@ The website is structured into the following sections:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Quame-Magma/aka-portfolio.git
+   git clone https://github.com/Quame-Magma/portfolio.git
    ```
 2. Navigate to the project directory:
    ```bash
