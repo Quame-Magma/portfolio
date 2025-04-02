@@ -64,7 +64,7 @@ The website is structured into the following sections:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd aka-portfolio
+   cd portfolio
    ```
 3. Open `index.html` in your preferred browser.
 
